@@ -1,0 +1,8 @@
+# Linear Regression - Regreção linear
+
+
+Predição de preços de casas, ações, uso de energia em computação, medicina ...
+
+Predizer preços de casas, dado um input: quantidade de quartos, banheiros.
+
+Predizer provaveis futuros acidentes de transito.
