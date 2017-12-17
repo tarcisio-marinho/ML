@@ -11,7 +11,7 @@ Predizer provaveis futuros acidentes de transito.
 
 Dependencies:
 
-matplotlib
+sudo pip3 matplotlib
 numpy
 pandas
 
