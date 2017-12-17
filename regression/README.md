@@ -6,3 +6,13 @@ Predição de preços de casas, ações, uso de energia em computação, medicin
 Predizer preços de casas, dado um input: quantidade de quartos, banheiros.
 
 Predizer provaveis futuros acidentes de transito.
+
+
+
+Dependencies:
+
+matplotlib
+numpy
+pandas
+
+sudo apt-get install python3-tk
