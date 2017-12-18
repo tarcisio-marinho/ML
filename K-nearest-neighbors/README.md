@@ -13,6 +13,9 @@ classificação
 
 testar e treinar é a mesma coisa
 
+a distancia euclidiana calcula a distancia de cada ponto do dataset com o novo ponto
+
+# Dependencies:
 
 pip3 install numpy pandas sklearn
 
