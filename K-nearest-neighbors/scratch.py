@@ -36,8 +36,8 @@ def knn(data, predict, k=3):
 
     for group in data:
         for features in data[group]:
-            euclidean_distance = np.linalg.norm(np.array(features) - np.array(predict))
-            distances.append([euclidean_distance, group])
+            ed = euclidian_distance(features, predict)
+            distances.append([ed, group])
 
     votes = [i[1] for i in sorted(distances) [:k]]
     vote_result = Counter(votes).most_common(1)[0][0]
@@ -45,8 +45,8 @@ def knn(data, predict, k=3):
     return vote_result
 
 def test():
-    dataset = {'k' : [[1, 2], [2, 3], [3, 1]], 'r':[[6, 5], [7, 7], [8, 6]]}
-    new_features = [5, 7]
+    dataset = {'black' : [[1, 2], [2, 3], [3, 1]], 'red':[[6, 5], [7, 7], [8, 6]]}
+    new_features = [2.5, 2.5]
     result = knn(dataset, new_features, k=3)
     print("the new feature is near to group: " + result)
 
@@ -56,6 +56,9 @@ def test():
     
     plt.scatter(new_features[0], new_features[1])
     plt.show()
+
+def cancer_test():
+    pass
 
 
 if __name__ == "__main__":
