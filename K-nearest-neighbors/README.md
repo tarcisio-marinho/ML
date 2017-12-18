@@ -1,5 +1,5 @@
 # K nearest neighbors 
-
+![alt text](knn.png)
 algoritmo de classificação
 
 separação/classificação/agrupamento de dados em grupos
