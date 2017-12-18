@@ -1,6 +1,7 @@
 # Linear Regression - Regreção linear
 
 ![alt text](regression.png)
+
 Predição de preços de casas, ações, uso de energia em computação, medicina ...
 
 Predizer preços de casas, dado um input: quantidade de quartos, banheiros.
