@@ -52,7 +52,7 @@ def test():
     plt.scatter(new_features[0], new_features[1])
     plt.show()
 
-def cancer_test():
+def cancer_accuracy_test():
     df = pd.read_csv("data/breast-cancer-wisconsin.data")
     df.replace("?", -99999, inplace=True)
     df.drop(['id'], 1, inplace=True)
@@ -82,6 +82,14 @@ def cancer_test():
 
     print("Accuracy: " , correct/total)
         
+
+def cancer_test():
+    df = pd.read_csv("data/breast-cancer-wisconsin.data")
+    df.replace("?", -99999, inplace=True)
+    df.drop(['id'], 1, inplace=True)
+    x = np.array(df.drop(['class'], 1))
+    y = np.array(df['class'])
+
 
 if __name__ == "__main__":
     #test()
