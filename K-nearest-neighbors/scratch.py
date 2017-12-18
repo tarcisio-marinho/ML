@@ -1,13 +1,4 @@
-# euclidian distance
-# sqrt((q[i] - p[i])**2 for i in range(n))
 
-''' Example
-q = (1, 3)
-p = (2, 5)
-
-sqrt((1 - 2)**2 + (3 - 5)**2)
-
-'''
 
 from math import sqrt
 import numpy as np
@@ -20,6 +11,8 @@ import random
 
 style.use("fivethirtyeight")
 
+# euclidian distance
+# sqrt([sum((q[i] - p[i])**2) for i in range(n)])
 
 def euclidian_distance(plot1, plot2):
     sum = 0.0
