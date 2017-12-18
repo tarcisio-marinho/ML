@@ -11,8 +11,6 @@ Predizer provaveis futuros acidentes de transito.
 
 Dependencies:
 
-sudo pip3 matplotlib
-numpy
-pandas
+sudo pip3 matplotlib numpy pandas
 
 sudo apt-get install python3-tk
