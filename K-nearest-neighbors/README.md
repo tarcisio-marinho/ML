@@ -6,9 +6,12 @@ separação/classificação/agrupamento de dados em grupos
 
 K geralmente vai ser impar.
 
-quanto maior o dataset, mais demora
+Compara o novo ponto "teste" com todos os outros pontos, quanto maior o dataset, mais demora
 
-suport vector machines é mais eficiente e melhor para 
+melhoria de performace: calcular uma área ao redor do novo ponto, calculando a distancia apenas
+do novo ponto aos pontos dentro dessa área
+
+suport vector machines é mais eficiente para 
 classificação
 
 testar e treinar é a mesma coisa
