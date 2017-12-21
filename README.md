@@ -1,3 +1,3 @@
 # Machine Learning Algorithms
 
-Study
+Machine learning algorithms study 

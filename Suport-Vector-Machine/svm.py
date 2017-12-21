@@ -15,11 +15,11 @@ if __name__ == "__main__":
     x = np.array(df.drop(['class'], 1))
     y = np.array(df['class'])
 
-    x_train, x_test, y_train, y_test = cross_validation.train_test_split(x, y, test_size=0.2)
-    clf = svm.SVC()
-    clf.fit(x_train, y_train)
+    x_train, x_test, y_train, y_test = cross_validation.train_test_split(x, y, test_size=0.2) # teste de treino
+    clf = svm.SVC() # instancia o classificador
+    clf.fit(x_train, y_train) # treinar o classificador
 
-    accuracy = clf.score(x_test, y_test)
+    accuracy = clf.score(x_test, y_test) #testar acurácia do classificador, dado o dataset
     print(accuracy)
 
     # test

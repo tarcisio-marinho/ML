@@ -12,10 +12,4 @@ df.drop(['id'], 1, inplace=True) # remove ID
 
 x = np.array(df.drop(['class'], 1))
 y = np.array(df['class'])
-for a in x:
-    plt.scatter(a)
 
-for b in y:
-    plt.scatter(b)
-
-plt.show()
