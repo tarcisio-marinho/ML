@@ -7,15 +7,21 @@
 # dot product of two vectors: A*B
 # (1*4) + (3*2) = 10 -> valor escalar
 
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-        
-df = pd.read_csv('data/breast-cancer-wisconsin.data')
+import numpy as np 
+import matplotlib.ploty as plt
 
-df.replace('?', -99999, inplace=True)
-df.drop(['id'], 1, inplace=True) # remove ID
+class Support_Vector_Machine:
+    def __init__(self, visualization=True):
+        self.visualization = visualization
+        self.colors = {1:'r', -1:'b'}
+        if(self.visualization):
+            self.fig = plt.figure()
+            self.ax = self.fig.add_subplot(1, 1, 1)
 
-x = np.array(df.drop(['class'], 1))
-y = np.array(df['class'])
+    
+    # train method
+    def fit(self, features):
 
+        # sinal (x*w + b)
+        classification = np.sign(np.dot(np.array(features), self.w) + self.b)  
+        return classification

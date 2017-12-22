@@ -16,8 +16,8 @@ if __name__ == "__main__":
     y = np.array(df['class'])
 
     x_train, x_test, y_train, y_test = cross_validation.train_test_split(x, y, test_size=0.2)
-    clf = neighbors.KNeighborsClassifier()
-    clf.fit(x_train, y_train)
+    clf = neighbors.KNeighborsClassifier() # classificador
+    clf.fit(x_train, y_train) # treinar o classificador
 
     accuracy = clf.score(x_test, y_test)
     print(accuracy)
