@@ -1,5 +1,7 @@
 # K means - Unsupervised Learning
 
+![alt text](kmeans.png)
+
 Algoritmo de classificação.
 
 
@@ -12,3 +14,7 @@ Tentar criar K-clusters (agrupamentos), sem existir uma label. Por isso é unsup
 3 - Tira a média dos pontos, criando um novo ponto ("centro"/ centroid), gerando assim, clusters
 
 4 - repetir esse processo até os centroids pararem de se mexer
+
+# Cluster algorithms
+
+![alt text](450px-ClusterAnalysis_Mouse.svg.png)
