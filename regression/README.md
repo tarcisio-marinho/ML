@@ -1,4 +1,4 @@
-# Linear Regression - Regreção linear
+# Linear Regression - Supervised Learning
 
 ![alt text](regression.png)
 

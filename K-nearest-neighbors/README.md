@@ -1,4 +1,4 @@
-# K nearest neighbors 
+# K nearest neighbors - Supervised Learning
 
 ![alt text](knn.png)
 algoritmo de classificação
