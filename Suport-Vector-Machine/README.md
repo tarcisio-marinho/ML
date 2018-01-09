@@ -21,3 +21,11 @@ Predizer qual será o novo ponto, tendo um dataset de pontos
 
 
     Funciona bem para pequenos datasets (menores que 1000 rows)
+
+O hiperplane é N-1, onde N é o numero de dimensões. Se os dados tiverem 2 features, o hiperplano será uma linha.
+
+**Kernels**
+
+É utilizado quando não se pode fazer um hiperplane nos dados, transformando os dados
+
+![alt text](kernel.png)
