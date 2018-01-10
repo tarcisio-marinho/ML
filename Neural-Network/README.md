@@ -1,12 +1,13 @@
 # Neural Network
 
-Quando uma rede neural tem mais de uma hidden layer, ela vira uma deep neural network
-
 
 ![alt text](neuralnet.png)
 
 
 **Deep neural network**
+
+Quando uma rede neural tem mais de uma hidden layer, ela vira uma deep neural network
+
 
 ![alt text](deep_neural_network.png)
 
