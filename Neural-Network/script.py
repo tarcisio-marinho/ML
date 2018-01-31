@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
-mnist = input_data.read_data(".", one_hot=True)
+mnist = input_data.read_data_sets(".", one_hot=True)
 
 # hidden layers
 n_nodes_hl1 = 500
@@ -54,8 +54,7 @@ def train_neural_network(x):
     prediction = neural_network_model(x)
 
     # calculate cost function
-    cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(prediction, y))
-
+    cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=prediction, labels=y))
     # learning_rate = 0.001 by default
     # optimizer -> backpropagation -> gradient decent
     optimizer = tf.train.AdamOptimizer().minimize(cost)
@@ -64,7 +63,7 @@ def train_neural_network(x):
     hm_epochs = 10
 
     with tf.Session() as sess:
-        sess.run(tf.initialize_all_variables())
+        sess.run(tf.global_variables_initializer())
 
 
         # train part
