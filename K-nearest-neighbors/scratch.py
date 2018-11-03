@@ -92,7 +92,7 @@ def cancer_test():
 
 
 if __name__ == "__main__":
-    #test()
-    cancer_test()
+    test()
+    # cancer_test()
 
     
