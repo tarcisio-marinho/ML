@@ -20,12 +20,14 @@ if __name__ == "__main__":
     clf.fit(x_train, y_train) # treinar o classificador
 
     accuracy = clf.score(x_test, y_test) #testar acurácia do classificador, dado o dataset
-    print(accuracy)
+    print("Accuracy: ".format(accuracy))
 
     # test
     example_measures = np.array([[4, 2, 1, 1, 1, 2, 3, 2, 1], [4, 2, 1, 2, 2, 2, 3, 2, 1]])
     example_measures = example_measures.reshape(len(example_measures), -1)
 
+    
+    tipos_de_cancer = {4 : "maligo", 2 : "benigno"}
+
     prediction = clf.predict(example_measures)
-    print(prediction) 
-    # 98% de certeza se o cancer vai ser maligno ou benigno
+    print('Tipo de cancer é: {}'.format(tipos_de_cancer[prediction.item(0)]))

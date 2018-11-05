@@ -79,20 +79,10 @@ def cancer_accuracy_test():
             if(group == vote):
                 correct+=1
             total+=1
-
+    
     print("Accuracy: " , correct/total)
-        
-
-def cancer_test():
-    df = pd.read_csv("data/breast-cancer-wisconsin.data")
-    df.replace("?", -99999, inplace=True)
-    df.drop(['id'], 1, inplace=True)
-    x = np.array(df.drop(['class'], 1))
-    y = np.array(df['class'])
-
 
 if __name__ == "__main__":
-    test()
-    # cancer_test()
-
+    # test()
+    cancer_accuracy_test()
     
